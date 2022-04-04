@@ -1,17 +1,24 @@
 ﻿<h3>SignIn</h3>
-<h2 class="display-2 mb-4">Sign in</h2>
-<form method="post">
-    <div class="form-group">
-        <label for="username" class="form-label">Username</label>
-        <input asp-for="@Model.UserName" class="form-control mb-2" type="text" placeholder="username" />
+@*<EditForm Model="Person" OnValidSubmit="AddPerson">
+<DataAnnotationsValidator />
+<ValidationSummary />
 
-        <label for="password" class="form-label">Password</label>
-        <input asp-for="@Model.Password" class="form-control mb-4" type="password" placeholder="password" />
+<div class="form-group">
 
-         <input class="btn btn-outline-danger" type="submit" value="Log In!!" />
-        
-    </div>
-</form>
+<label for="Name">Name:</label>
+<InputText @bind-Value="Person.Name" placeholder="Name" id="Name" />
+<ValidationMessage For="() => Person.Name"></ValidationMessage>
+
+<label for="Email">Email:</label>
+<InputText type="email" @bind-Value="Person.Email" placeholder="Email" id="Email"></InputText>
+<ValidationMessage For="() => Person.Email"></ValidationMessage>
+
+<input type="submit" class="btn btn-outline-dark" value="Sign up" />
+
+</div>
+
+</EditForm>*@
+
 @code {
 
 }
