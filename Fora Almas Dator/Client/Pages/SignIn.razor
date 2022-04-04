@@ -1,5 +1,17 @@
 ﻿<h3>SignIn</h3>
+<h2 class="display-2 mb-4">Sign in</h2>
+<form method="post">
+    <div class="form-group">
+        <label for="username" class="form-label">Username</label>
+        <input asp-for="@Model.UserName" class="form-control mb-2" type="text" placeholder="username" />
 
+        <label for="password" class="form-label">Password</label>
+        <input asp-for="@Model.Password" class="form-control mb-4" type="password" placeholder="password" />
+
+         <input class="btn btn-outline-danger" type="submit" value="Log In!!" />
+        
+    </div>
+</form>
 @code {
 
 }
