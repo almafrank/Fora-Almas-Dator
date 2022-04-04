@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fora_Almas_Dator.Shared.MessageModel
+namespace Fora_Almas_Dator.Shared
 {
-    internal class User
+    internal class InterestModel
     {
     }
 }

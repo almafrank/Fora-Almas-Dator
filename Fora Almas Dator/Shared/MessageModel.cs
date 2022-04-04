@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Fora_Almas_Dator.Shared
+{
+    public class MessageModel
+    {
+        [Key]
+        public int Id { get; set; }
+        public string Message { get; set; } = String.Empty;
+
+        // Relations
+        [ForeignKey(nameof(Thread))]
+        public int ThreadId { get; set; }
+        public ThreadModel Thread { get; set; }
+
+        [ForeignKey(nameof(User))]
+        public int? UserId { get; set; }
+        public UserModel? User { get; set; }
+    }
+}
