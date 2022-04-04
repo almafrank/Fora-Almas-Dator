@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fora Almas Dator.Server", "Fora Almas Dator\Server\Fora Almas Dator.Server.csproj", "{B9EE3B47-22E7-4055-82C1-80C1A869D7D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fora Almas Dator.Server", "Fora Almas Dator\Server\Fora Almas Dator.Server.csproj", "{B9EE3B47-22E7-4055-82C1-80C1A869D7D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fora Almas Dator.Client", "Fora Almas Dator\Client\Fora Almas Dator.Client.csproj", "{D7320EFE-AE56-4398-85F7-48A74D6A504C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fora Almas Dator.Client", "Fora Almas Dator\Client\Fora Almas Dator.Client.csproj", "{D7320EFE-AE56-4398-85F7-48A74D6A504C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fora Almas Dator.Shared", "Fora Almas Dator\Shared\Fora Almas Dator.Shared.csproj", "{034DF416-3B05-4325-A429-1F39788C6D83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fora Almas Dator.Shared", "Fora Almas Dator\Shared\Fora Almas Dator.Shared.csproj", "{034DF416-3B05-4325-A429-1F39788C6D83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
