@@ -1,6 +1,7 @@
 global using Fora_Almas_Dator;
 global using Fora_Almas_Dator.Shared;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
