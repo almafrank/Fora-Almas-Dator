@@ -1,5 +1,7 @@
 global using Fora_Almas_Dator;
 global using Fora_Almas_Dator.Shared;
+using Fora_Almas_Dator.Server.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +14,12 @@ builder.Services.AddRazorPages();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
+
+var connectionstring2 = builder.Configuration.GetConnectionString("AuthConnection");
+builder.Services.AddDbContext<AuthDbContext>(options => options.UseSqlServer(connectionstring2));
+
+//builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AuthDbContext>();
+
 
 var app = builder.Build();
 
@@ -34,7 +42,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-
+app.UseAuthentication();
 app.MapRazorPages();
 app.MapControllers();
 app.MapFallbackToFile("index.html");

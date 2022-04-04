@@ -1,3 +1,4 @@
+global using Fora_Almas_Dator.Shared;
 using Fora_Almas_Dator.Client;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;

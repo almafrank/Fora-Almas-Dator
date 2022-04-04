@@ -2,7 +2,7 @@
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Fora Almas Dator.Server.Controllers
+namespace Fora_Almas_Dator.Server.Controllers
 {
     [Route("api/[controller]")]
 [ApiController]
