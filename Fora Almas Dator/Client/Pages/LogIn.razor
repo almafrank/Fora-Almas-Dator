@@ -1,0 +1,40 @@
+﻿@page "/LogIn"
+@using Fora_Almas_Dator.Client.Service
+@inject IUserManager UserManager 
+
+<h3>LogIn</h3>
+
+<EditForm Model="User" OnValidSubmit="HandleSignin">
+<DataAnnotationsValidator />
+<ValidationSummary />
+
+
+
+<div class="form-group">
+    <label for="Name">Name:</label>
+    <InputText @bind-Value="User.Username" placeholder="UserName" id="UserName" />
+    <ValidationMessage For="() => User.Username"></ValidationMessage>
+</div>
+
+
+<div
+    <label for="Email">Email:</label>
+    <InputText type="email" @bind-Value="User.Password" placeholder="Password" id="Password"></InputText>
+    <ValidationMessage For="() => User.Password"></ValidationMessage>
+</div>
+
+<input type="submit" class="btn btn-outline-dark" value="Log In" />
+
+
+
+</EditForm>
+
+@code {
+    public UserModel User = new UserModel();
+
+    private async void HandleSignin()
+    {
+       
+    }
+
+}

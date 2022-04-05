@@ -16,10 +16,10 @@ namespace Fora_Almas_Dator.Server.Controllers
         }
         // GET: api/<UserController>
         [HttpGet]
-        public List<UserModel> GetUserInterest(int id)
+        public List<UserModel> GetUsers()
         {
-            var user = _dbContext.Users.All(x => x.Id == id);
-           return _dbContext.
+            
+          
         }
 
         // GET api/<UserController>/5
